@@ -489,7 +489,7 @@ input, textarea, select { font-family: inherit; font-size: 1rem; }
 .about-body p + p { margin-top: 16px; }
 .about-cta { margin-top: 32px; }
 .about-image {
-  background: linear-gradient(135deg, #4a4a6a 0%, #6a7a9a 100%);
+  background: linear-gradient(135deg, #87CEEB 0%, #B0E0E6 100%);
   border-radius: var(--radius-lg);
   aspect-ratio: 4/3;
   display: flex;
@@ -1233,16 +1233,21 @@ input, textarea, select { font-family: inherit; font-size: 1rem; }
   position: absolute;
   right: 0;
   top: 0;
-  width: 32%;
+  width: 40%;
   height: 100%;
   z-index: 1;
   overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .hero-image img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
+  width: auto;
+  height: auto;
+  max-width: 80%;
+  max-height: 100%;
+  object-fit: contain;
 }
 
 /* ── BRAND CAROUSEL SECTION ──────────────────────────────── */
