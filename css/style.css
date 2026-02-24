@@ -1922,8 +1922,8 @@ input, textarea, select { font-family: inherit; font-size: 1rem; }
   }
 
   .brand-card-logo {
-    width: 60px;
-    height: 60px;
+    width: 120px;
+    height: 120px;
   }
 
   .brand-card-name {
@@ -2084,8 +2084,8 @@ input, textarea, select { font-family: inherit; font-size: 1rem; }
   }
 
   .brand-card-logo {
-    width: 50px;
-    height: 50px;
+    width: 100px;
+    height: 100px;
   }
 
   .brand-card-name {
