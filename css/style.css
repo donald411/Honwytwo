@@ -1359,6 +1359,89 @@ input, textarea, select { font-family: inherit; font-size: 1rem; }
   margin: 0;
 }
 
+/* ── BRANDS PREVIEW SECTION ──────────────────────────────── */
+.brands-preview {
+  background: var(--color-bg);
+  padding: var(--section-pad) 0;
+}
+
+.brands-preview-grid {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 24px;
+  margin-bottom: 32px;
+}
+
+.brand-preview-card {
+  text-align: center;
+  transition: all var(--transition);
+}
+
+.brand-preview-card:hover {
+  transform: translateY(-8px);
+}
+
+.brand-preview-logo {
+  width: 100%;
+  aspect-ratio: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: var(--radius-lg);
+  margin-bottom: 16px;
+  overflow: hidden;
+}
+
+.brand-preview-logo img {
+  width: 70%;
+  height: 70%;
+  object-fit: contain;
+}
+
+.brand-preview-name {
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--color-ink);
+  margin-bottom: 4px;
+}
+
+.brand-preview-category {
+  font-size: .75rem;
+  color: var(--color-rose);
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: .05em;
+}
+
+@media (max-width: 1024px) {
+  .brands-preview-grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .brands-preview-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+  }
+
+  .brand-preview-logo {
+    margin-bottom: 12px;
+  }
+
+  .brand-preview-name {
+    font-size: .9rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .brands-preview-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+  }
+}
+
 /* ── COMPANY TRUST SECTION ──────────────────────────────── */
 .company-trust {
   background: var(--color-bg);
@@ -1397,7 +1480,7 @@ input, textarea, select { font-family: inherit; font-size: 1rem; }
 /* ── SHOWCASE SECTION (Brand Portfolio) ──────────────────── */
 /* ── PROCESS STEPS SECTION ──────────────────────────────── */
 .process-section {
-  background: var(--color-bg);
+  background: #F5F2ED;
   padding: var(--section-pad) 0;
 }
 
@@ -1425,6 +1508,22 @@ input, textarea, select { font-family: inherit; font-size: 1rem; }
 .process-step:hover {
   box-shadow: 0 8px 24px rgba(200, 112, 122, 0.15);
   transform: translateY(-4px);
+}
+
+.process-step:nth-child(1) {
+  background: #FAE8EC;
+}
+
+.process-step:nth-child(2) {
+  background: #F5E8DE;
+}
+
+.process-step:nth-child(3) {
+  background: #E8F0E8;
+}
+
+.process-step:nth-child(4) {
+  background: #EAE8F5;
 }
 
 .step-num {
